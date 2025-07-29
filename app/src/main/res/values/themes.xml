@@ -1,0 +1,77 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme using Material 3 -->
+    <style name="Base.Theme.GirlfriendlikeResponse" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/pink_500</item>
+        <item name="colorPrimaryContainer">@color/pink_200</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary color -->
+        <item name="colorSecondary">@color/purple_500</item>
+        <item name="colorSecondaryContainer">@color/purple_200</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Tertiary color -->
+        <item name="colorTertiary">@color/red_400</item>
+        <item name="colorTertiaryContainer">@color/red_100</item>
+
+        <!-- Status bar color -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryContainer</item>
+
+        <!-- Surface colors -->
+        <item name="colorSurface">@color/white</item>
+        <item name="colorSurfaceVariant">@color/gray_100</item>
+
+        <!-- Text colors -->
+        <item name="android:textColor">@color/gray_900</item>
+        <item name="android:textColorPrimary">@color/gray_900</item>
+        <item name="android:textColorSecondary">@color/gray_600</item>
+
+        <!-- Button styles -->
+        <item name="materialButtonStyle">@style/Widget.GirlfriendlikeResponse.Button</item>
+
+        <!-- EditText styles -->
+        <item name="editTextStyle">@style/Widget.GirlfriendlikeResponse.EditText</item>
+
+        <!-- Round corner for components -->
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.GirlfriendlikeResponse.Small</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.GirlfriendlikeResponse.Medium</item>
+
+        <!-- Window insets handling -->
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+    </style>
+
+    <style name="Theme.GirlfriendlikeResponse" parent="Base.Theme.GirlfriendlikeResponse" />
+
+    <!-- Button style -->
+    <style name="Widget.GirlfriendlikeResponse.Button" parent="Widget.Material3.Button">
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="backgroundTint">?attr/colorPrimary</item>
+        <item name="cornerRadius">16dp</item>
+    </style>
+
+    <!-- EditText style -->
+    <style name="Widget.GirlfriendlikeResponse.EditText" parent="Widget.Material3.TextInputEditText.OutlinedBox">
+        <item name="boxStrokeColor">@color/pink_300</item>
+        <item name="boxCornerRadiusTopStart">12dp</item>
+        <item name="boxCornerRadiusTopEnd">12dp</item>
+        <item name="boxCornerRadiusBottomStart">12dp</item>
+        <item name="boxCornerRadiusBottomEnd">12dp</item>
+        <item name="android:textColorHint">@color/gray_500</item>
+    </style>
+
+    <!-- Shape appearances -->
+    <style name="ShapeAppearance.GirlfriendlikeResponse.Small" parent="ShapeAppearance.Material3.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <style name="ShapeAppearance.GirlfriendlikeResponse.Medium" parent="ShapeAppearance.Material3.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>
+    </style>
+</resources>
